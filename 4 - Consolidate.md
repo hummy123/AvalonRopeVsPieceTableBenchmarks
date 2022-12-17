@@ -1,14 +1,3 @@
-``` ini
-
-BenchmarkDotNet=v0.13.2, OS=Windows 11 (10.0.22000.1335/21H2)
-AMD Ryzen 3 5300U with Radeon Graphics, 1 CPU, 8 logical and 4 physical cores
-.NET SDK=7.0.101
-  [Host]     : .NET 6.0.11 (6.0.1122.52304), X64 RyuJIT AVX2 DEBUG
-  Job-SEDMFQ : .NET 6.0.11 (6.0.1122.52304), X64 RyuJIT AVX2
-
-InvocationCount=1  UnrollFactor=1  
-
-```
 |           Method |  size |       Mean |      Error |     StdDev |     Median |
 |----------------- |------ |-----------:|-----------:|-----------:|-----------:|
 | **ConsolidateTable** |   **100** |   **2.188 μs** |  **0.0472 μs** |  **0.0485 μs** |   **2.200 μs** |
