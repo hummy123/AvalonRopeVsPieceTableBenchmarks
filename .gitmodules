@@ -1,0 +1,6 @@
+[submodule "AvalonEdit"]
+	path = AvalonEdit
+	url = https://github.com/icsharpcode/AvalonEdit
+[submodule "Functional-Piece-Table"]
+	path = Functional-Piece-Table
+	url = https://github.com/hummy123/Functional-Piece-Table/
