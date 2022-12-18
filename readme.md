@@ -11,6 +11,6 @@ I won't bore with a discussion of the benchmark results - the .md files at the r
 2. This Rope may be regarded as slightly non-standard due to storing char values at each leaf rather than strings [unlike the diagram illustrating Ropes on Wikipedia](https://en.wikipedia.org/wiki/Rope_(data_structure)).
   - This Piece Table is somewhat non-standard as well. It is implemented as a linked list with a zipper, meaning that (like a splay tree) operations on nodes close to each other execute more quickly. 
 3. The benchmark files numbered 4 and 5 illustrate two features of this particular Piece Table: Consolidation and Merging.
-  - A Piece Table's worst case is when we have inserted into the middle of a string many times and subsequently have many pieces in the table. The Consolidation function rebuilds the table in O(log n) time so that operations are fast again.
+  - A Piece Table's worst case is when we have inserted into the middle of a string many times and subsequently have many pieces in the table. The Consolidation function rebuilds the table in O(n log n) time so that operations are fast again.
     - The Consolidate function was intended to be run in a multi-threaded manner after every appreciable keystroke delay, which is safe to do because of this Piece Table's immutability. This always keeps the structure's performance at the best case.
     - The Merge function "extends" a piece when we type contiguously rather than inserting a new piece into the table. This helps avoid the worst case when the table has many pieces.
